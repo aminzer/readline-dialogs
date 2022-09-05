@@ -1,6 +1,6 @@
 {
   "name": "@aminzer/readline-dialogs",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Dialog-like interactions with stdin/stdout or other readline interfaces",
   "keywords": [
     "dialogs",
