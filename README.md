@@ -1,6 +1,6 @@
 ### Overview
 
-Dialog-like interactions with process.stdin or other readline interface for [NodeJS](https://nodejs.org).
+Dialog-like interactions with stdin/stdout or other [readline interfaces](https://nodejs.org/dist/latest/docs/api/readline.html#readline) for [NodeJS](https://nodejs.org).
 
 ### Installation
 
@@ -14,7 +14,7 @@ npm i @aminzer/readline-dialogs
 
 ##### Overview
 
-`prompt` is used to fetch user's answer from passed input (process.stdin by default).
+`prompt` is used to fetch user's answer from passed input stream (process.stdin by default).
 
 ```javascript
 const answer = await prompt('Enter your name:');
@@ -38,7 +38,7 @@ console.log(`Answer is: ${answer}`);
 
 ##### Overview
 
-`confirm` is used to check user's confirmation from passed input (process.stdin by default).
+`confirm` is used to check user's confirmation from passed input stream (process.stdin by default).
 
 ```javascript
 const answer = await confirm('Are you sure you want to continue:');
@@ -61,11 +61,11 @@ console.log(answer ? 'Processing...' : 'Terminating...');
 
 ##### Overview
 
-`alert` is used to wait for user's entering new-line symbol from passed input (process.stdin by default).
+`alert` is used to wait for user's entering new-line symbol from passed input stream (process.stdin by default).
 
 ```javascript
-await confirm('Press enter to continue:');
-// entering answer in process.stdin
+await alert('Press enter to continue:');
+// entering new-line symbol in process.stdin
 ```
 
 ##### Parameters
