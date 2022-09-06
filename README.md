@@ -8,6 +8,30 @@ Dialog-like interactions with stdin/stdout or other [readline interfaces](https:
 npm i @aminzer/readline-dialogs
 ```
 
+### Usage
+
+![Usage example](https://github.com/aminzer/readline-dialogs/blob/media/usage-example.gif?raw=true)
+
+```javascript
+const { prompt, confirm, alert } = require('@aminzer/readline-dialogs');
+
+(async () => {
+  const userName = await prompt('Enter your name:');
+
+  const isProcessingConfirmed = await confirm(`Do you want to process something, ${userName}?`);
+
+  if (!isProcessingConfirmed) {
+    return;
+  }
+
+  await alert('Press Enter to start processing');
+
+  console.log('...');
+  console.log('Processed');
+})();
+
+```
+
 ### API
 
 **prompt**
