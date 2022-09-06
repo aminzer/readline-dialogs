@@ -8,9 +8,7 @@ Dialog-like interactions with stdin/stdout or other [readline interfaces](https:
 npm i @aminzer/readline-dialogs
 ```
 
-### Usage
-
-![Usage example](https://github.com/aminzer/readline-dialogs/blob/media/usage-example.gif?raw=true)
+### Usage example
 
 ```javascript
 const { prompt, confirm, alert } = require('@aminzer/readline-dialogs');
@@ -29,8 +27,9 @@ const { prompt, confirm, alert } = require('@aminzer/readline-dialogs');
   console.log('...');
   console.log('Processed');
 })();
-
 ```
+
+![Usage example](https://github.com/aminzer/readline-dialogs/blob/media/usage-example.gif?raw=true)
 
 ### API
 
